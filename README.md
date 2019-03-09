@@ -1,5 +1,6 @@
 ##### My progress based by guide from ['p1xt's Get Job ready - JavaScript Edition'](https://github.com/P1xt/p1xt-guides/blob/master/job-ready-javascript-edition-3.0.md)
 - *07.01.19* Course: [Algebra foundations](https://www.khanacademy.org/math/algebra/introduction-to-algebra)
+- *15.01.19* Book: [Head First JavaScript Programming](https://www.oreilly.com/library/view/head-first-javascript/9781449340124/)
 - *20.01.19* Course: [Linux Beginner Tutorials](https://www.linux.org/forums/linux-beginner-tutorials.123/)
 - *25.01.19* Course: [Intro to JS: Drawing & Animation](https://www.khanacademy.org/computing/computer-programming/programming)
 - *27.01.19* Course: [Solving equations](https://www.khanacademy.org/math/algebra/one-variable-linear-equations)
