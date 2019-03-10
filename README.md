@@ -1,4 +1,4 @@
-### My progress based on guide [Get Job ready - JavaScript Edition'](https://github.com/P1xt/p1xt-guides/blob/master/job-ready-javascript-edition-3.0.md)
+### My progress based on guide [Get Job ready - JavaScript Edition](https://github.com/P1xt/p1xt-guides/blob/master/job-ready-javascript-edition-3.0.md)
 | Date | Type | Link |
 | ---- | ---- | ---- |
 | 07.01.19 | Course | [Algebra foundations](https://www.khanacademy.org/math/algebra/introduction-to-algebra) |
