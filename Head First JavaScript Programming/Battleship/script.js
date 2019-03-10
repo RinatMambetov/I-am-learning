@@ -1,4 +1,3 @@
-```
 var view = {
   displayMessage: function (msg) {
     var messageArea = document.getElementById("messageArea");
@@ -118,4 +117,3 @@ function handleKeyPress(e) {
 }
 
 window.onload = init;
-```
