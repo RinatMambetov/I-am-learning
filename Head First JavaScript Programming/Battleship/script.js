@@ -1,4 +1,4 @@
-```sh
+```
 var view = {
   displayMessage: function (msg) {
     var messageArea = document.getElementById("messageArea");
