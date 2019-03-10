@@ -1,4 +1,4 @@
-```
+```sh
 var view = {
   displayMessage: function (msg) {
     var messageArea = document.getElementById("messageArea");
@@ -100,7 +100,6 @@ function init() {
   fireButton.onclick = handleFireButton;
   var guessInput = document.getElementById("guessInput");
   guessInput.onkeypress = handleKeyPress;
-
 }
 
 function handleFireButton() {
