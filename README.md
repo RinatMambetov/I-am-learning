@@ -14,3 +14,4 @@
 | 16.02.19 | Course | [Linear equations & graphs](https://www.khanacademy.org/math/algebra/two-var-linear-equations) |
 | 26.02.19 | Course didn't finish :( | [Advanced JS Natural Simulations](https://www.khanacademy.org/computing/computer-programming/programming-natural-simulations) |
 | 07.03.19 | Course | [10 Days of Javascript](https://www.hackerrank.com/domains/tutorials/10-days-of-javascript) |
+| 11.03.19 | Course | [Functions](https://www.khanacademy.org/math/algebra/algebra-functions) |
