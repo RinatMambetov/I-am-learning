@@ -6,7 +6,7 @@
 | 20.01.19 | Course | [Linux Beginner Tutorials](https://www.linux.org/forums/linux-beginner-tutorials.123/) |
 | 25.01.19 | Course | [Intro to JS Drawing & Animation](https://www.khanacademy.org/computing/computer-programming/programming) |
 | 27.01.19 | Course | [Solving equations](https://www.khanacademy.org/math/algebra/one-variable-linear-equations) |
-| 30.01.19 | Course | [Intro to HTML/CSS Making webpages](https://www.khanacademy.org/computing/computer-programming/sql) |
+| 30.01.19 | Course | [Intro to HTML/CSS Making webpages](https://www.khanacademy.org/computing/computer-programming/html-css) |
 | 31.01.19 | Course | [Solving inequalities](https://www.khanacademy.org/math/algebra/one-variable-linear-inequalities) |
 | 03.02.19 | Course | [Intro to SQL Querying and managing data](https://www.khanacademy.org/computing/computer-programming/sql) |
 | 04.02.19 | Course | [Working with units](https://www.khanacademy.org/math/algebra/units-in-modeling) |
