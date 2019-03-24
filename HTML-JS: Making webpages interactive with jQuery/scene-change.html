@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Scene change</title>
+        <style>
+        #leafers {
+            position: absolute;
+            top: 210px;
+            left: 378px;
+        }
+            
+        </style>
+    </head>
+    <body>
+
+    <img src="https://www.kasandbox.org/programming-images/landscapes/beach-with-palm-trees.png">
+
+    <img src="https://www.kasandbox.org/programming-images/avatars/leafers-seedling.png" id="leafers">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        var $sound = $("<audio preload=auto>");
+        $sound.attr("src",
+        "https://www.kasandbox.org/programming-sounds/retro/boom2.mp3");
+        
+        $("#leafers").on("click", function(event) {
+        // change image
+        $("img:first-child").attr("src", "https://www.kasandbox.org/programming-images/landscapes/lava.png");
+        // play sound
+        $("body").append($sound);
+        $sound[0].play();
+        // add popup
+        var $popup = $("<div></div>");
+        $popup.text("Oh Noes!!!");
+        $popup.css({
+            "position": "absolute",
+            "width": "75px",
+            "height": "20px",
+            "top": "260px",
+            "left": "330px",
+            "background-color": "#eee",
+            "border-radius": "5px",
+            "padding": "5px"
+        });
+        $popup.appendTo("body");
+        });
+    </script>
+    </body>
+</html>
