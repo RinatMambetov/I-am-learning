@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Word game </title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #eee;
+            }
+            form {
+                font-size: 1.5em;
+            }
+            .scrambled, input, button, #result {
+                font-family: monospace;
+                font-size: 2em;
+            }
+            #result {
+                text-transform: uppercase;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <h1>Word game!</h1>
+    <form id="joke-form">
+        <label>
+            Unscramble these letters to form a word:<Br>
+            <input type="radio" id="jquery" class="scrambled" name="word" value="jquery">
+            <label for="jquery">REYJUQ</label>
+            <br>
+            <input type="radio" id="khan" class="scrambled" name="word" value="khan">
+            <label for="khan">HNAK</label>
+            <br>
+            <input type="radio" id="pamela" class="scrambled" name="word" value="pamela">
+            <label for="pamela">AMLAEP</label>
+            <br>
+            <input id="guess" type="text" size="10">
+        </label>
+        <button type="submit">Check</button>
+    </form>
+    <div id="result"></div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+    $("#joke-form").on("submit", function(event) {
+        event.preventDefault();
+        
+        var word = $("input[type='radio'][name='word']:checked").val();
+        var guess = $('#guess').val();
+
+        if(word === guess.toLowerCase()) {
+            $("#result").text("you win!!!");
+        } else $("#result").text("try again");
+
+    });
+    </script>
+    </body>
+</html>
