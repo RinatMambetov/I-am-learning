@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Interactive slideshow</title>
+        <style>
+            body {
+                width: 400px;
+                background-color: #111;
+            }
+            img {
+                border-radius: 5px;
+            }
+            #container {
+                display: flex;
+                color: #eee;
+                justify-content: space-between;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <img id="img1" src="https://www.kasandbox.org/programming-images/food/fruits.png" width="400" alt="Fruits">
+    <img id="img2" src="https://www.kasandbox.org/programming-images/food/berries.png" width="400" alt="Berries">
+    <img id="img3" src="https://www.kasandbox.org/programming-images/food/shish-kebab.png" width="400" alt="Shish-kebab">
+    <div id="container">
+    <button type="button" id="prev">⇦ Prev</button>
+    <div id="caption">Fruits</div>
+    <button type="button" id="next">Next ⇨</button>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+    
+    $imgs = $("img");
+    $imgs.hide();
+    $("#img1").fadeIn();
+    var currentImg = 1;
+    
+    $("#next").on("click", function() {
+        $imgs.hide();    
+        currentImg++;
+        if (currentImg > $imgs.length) {
+            currentImg = 1;
+        }
+        $("#img" + currentImg).fadeIn();
+        $("#caption").text($("#img" + currentImg).attr("alt"));
+    });
+    
+    $("#prev").on("click", function() {
+        $imgs.hide();    
+        currentImg--;
+        if (currentImg < 1) {
+            currentImg = $imgs.length;
+        }
+        $("#img" + currentImg).fadeIn();
+        $("#caption").text($("#img" + currentImg).attr("alt"));
+    });
+    
+    </script> 
+    
+    </body>
+</html>
