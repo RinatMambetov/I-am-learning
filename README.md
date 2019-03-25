@@ -17,5 +17,6 @@
 | 11.03.19 | Course | [Khan Academy Functions](https://www.khanacademy.org/math/algebra/algebra-functions) |
 | 11.03.19 | Book | [A Mind For Numbers: How to Excel at Math and Science by Barbara Oakley](https://www.amazon.com/Mind-Numbers-Science-Flunked-Algebra-ebook/dp/B00G3L19ZU) |
 | 15.03.19 | Course | [Khan Academy HTML/JS: Making webpages interactive](https://www.khanacademy.org/computing/computer-programming/html-css-js) |
-| 18.03.19 | Course | [Hexlet Intro to SICP](https://ru.hexlet.io/courses/sicp)
-| 19.03.19 | Course | [Khan Academy Linear word problems](https://www.khanacademy.org/math/algebra/linear-word-problems)
+| 18.03.19 | Course | [Hexlet Intro to SICP](https://ru.hexlet.io/courses/sicp) |
+| 19.03.19 | Course | [Khan Academy Linear word problems](https://www.khanacademy.org/math/algebra/linear-word-problems) |
+| 25.03.19 | Course | [Khan Academy HTML/JS: Making webpages interactive with jQuery](https://www.khanacademy.org/computing/computer-programming/html-js-jquery) |
