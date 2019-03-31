@@ -33,7 +33,8 @@ function startLevel(map) {
     for (x = 5; x <= map.getWidth() - 5; x++) {
         map.placeObject(x, 3, 'block');
         map.placeObject(x, map.getHeight() - 10, 'block');
-    } */
+    } 
+*/
 
     map.placeObject(15, 12, 'computer');
 
