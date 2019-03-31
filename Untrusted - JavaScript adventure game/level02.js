@@ -31,7 +31,7 @@ function startLevel(map) {
     map.placeObject(map.getWidth()-6, map.getHeight()-4, 'block');
     map.placeObject(map.getWidth()-5, map.getHeight()-5, 'block');
     map.placeObject(map.getWidth()-5, map.getHeight()-3, 'block');
-  	map.placeObject(map.getWidth()-35, map.getHeight()-14, 'exit');
+    map.placeObject(map.getWidth()-35, map.getHeight()-14, 'exit');
     map.placeObject(map.getWidth()-5, map.getHeight()-4, 'exit');
 }
  
