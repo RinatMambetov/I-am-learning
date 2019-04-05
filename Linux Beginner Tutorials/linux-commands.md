@@ -103,7 +103,7 @@
 | gzip | compress files |
 | tar -czvf test.tar.gz | tar plus gzip |
 | tar -zxvpf test.tar.gz | untar plus unzip |
-| gunzip | unzip |
+| gunzip | unzip test.zip -d . |
 | xdg-open | file, http, mailto |
 | vlc, shotwell | viseo, pics |
 | cat file - grep string | find string in file |
