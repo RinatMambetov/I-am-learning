@@ -21,3 +21,4 @@
 | 19.03.19 | Course | [Khan Academy Linear word problems](https://www.khanacademy.org/math/algebra/linear-word-problems) |
 | 25.03.19 | Course | [Khan Academy HTML/JS: Making webpages interactive with jQuery](https://www.khanacademy.org/computing/computer-programming/html-js-jquery) |
 | 30.03.19 | Course | [Khan Academy Sequences](https://www.khanacademy.org/math/algebra/sequences) |
+| 07.04.19 | Course | [Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/) |
