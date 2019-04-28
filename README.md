@@ -23,3 +23,5 @@
 | 30.03.19 | Course | [Khan Academy Sequences](https://www.khanacademy.org/math/algebra/sequences) |
 | 07.04.19 | Course | [Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/) |
 | 14.04.19 | Course | [Khan Academy Systems of equations](https://www.khanacademy.org/math/algebra/systems-of-linear-equations) |
+| 28.04.19 | Course | [Learn to Code Advanced HTML & CSS](https://learn.shayhowe.com/advanced-html-css/) |
+
