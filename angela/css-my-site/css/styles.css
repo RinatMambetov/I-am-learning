@@ -1,3 +1,46 @@
 body {
-	background-color: blue;
+	margin: 0;
+	font-family: 'Merriweather', serif;
 }
+
+h1 {
+	font-family: 'Sacramento', cursive;
+}
+
+h2,
+h3 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.top-container {
+	background-color: #eaf6f6;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.top-cloud {
+	position: relative;
+	left: 200px;
+}
+
+.bottom-cloud {
+	position: absolute;
+}
+
+/* .middle-container {
+	background-color: red;
+	border: 20px solid;
+	height: 200px;
+	margin-left: 260px;
+	width: 200px;
+	position: relative;
+	left: 100px;
+}
+
+.bottom-container {
+	background-color: blue;
+	border: 10px solid;
+	height: 200px;
+	margin-left: 500px;
+	width: 200px;
+} */
