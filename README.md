@@ -26,4 +26,6 @@
 | 28.04.19 | Course | [Learn to Code Advanced HTML & CSS](https://learn.shayhowe.com/advanced-html-css/) |
 | 29.04.19 | Course | [Khan Academy Inequalities (systems & graphs)](https://www.khanacademy.org/math/algebra/two-variable-linear-inequalities) |
 | 22.05.19 | Course | [HTML and CSS of Udemy The Complete 2019 Web Development Bootcamp by Angela Yu](https://www.udemy.com/the-complete-web-development-bootcamp/learn/v4/content) |
-| 24.05.19 | Course | [Sassy with CSS](http://www.sassshop.com/#/8/4) |
+| 24.05.19 | Course | [Sassy with CSS](http://www.sassshop.com) |
+| 25.05.19 | Game | [Flexbox Froggy](https://flexboxfroggy.com) |
+| 27.05.19 | Course | [What the flexbox Wes Bos](https://flexbox.io) |
