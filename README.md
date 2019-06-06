@@ -1,4 +1,4 @@
-### My progress based on guide [Get Job ready - JavaScript Edition](https://github.com/P1xt/p1xt-guides/blob/master/job-ready-javascript-edition-3.0.md)
+### My progress 😏
 | Date | Type | Link |
 | ---- | ---- | ---- |
 | 07.01.19 | Course | [Khan Academy Algebra foundations](https://www.khanacademy.org/math/algebra/introduction-to-algebra) |
@@ -29,3 +29,5 @@
 | 24.05.19 | Course | [Sassy with CSS](http://www.sassshop.com) |
 | 25.05.19 | Game | [Flexbox Froggy](https://flexboxfroggy.com) |
 | 27.05.19 | Course | [What the flexbox Wes Bos](https://flexbox.io) |
+| 31.05.19 | Project | [Single price grid component master](https://astrakhanrinat.github.io/frontend-mentor/single-price-grid-component-master/index.html) |
+| 04.06.19 | Course | [Mastering markdown](https://masteringmarkdown.com/) |
