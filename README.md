@@ -32,3 +32,4 @@
 | 31.05.19 | Project | [Single price grid component master](https://astrakhanrinat.github.io/frontend-mentor/single-price-grid-component-master/index.html)                          |
 | 04.06.19 | Course  | [Mastering markdown Wes Bos](https://masteringmarkdown.com/)                                                                                                  |
 | 16.06.19 | Course  | [CSS Grid Wes Bos](https://cssgrid.io)                                                                                                                        |  |
+| 16.06.19 | Game    | [CSS Grid Garden](https://cssgridgarden.com)                                                                                                                  |
