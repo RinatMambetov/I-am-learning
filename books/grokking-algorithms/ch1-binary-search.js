@@ -1,30 +1,20 @@
-const search = (arr, item) => {
+const binarySearch = (list, item) => {
   let min = 0;
-  let max = arr.length - 1;
+  let max = list.length - 1;
 
   while (min <= max) {
     const mid = Math.floor((min + max) / 2);
-    const guess = arr[mid];
+    const guess = list[mid];
 
-    console.log('min ' + min);
-    console.log('max ' + max);
-    console.log('mid ' + mid);
-    console.log('guess ' + guess);
-
-    if (guess === item) {
-      return mid;
-    }
-
-    if (guess < item) {
-      min = mid + 1;
-    } else if (guess > item) {
-      max = mid - 1;
-    }
+    if (guess === item) return mid;
+    if (guess < item) min = mid + 1;
+    else if (guess > item) max = mid - 1;
   }
-
   return 'no result';
 };
 
-const list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-console.log(search(list, 7));
+const list = [];
+for (let i = 1; i <= 10; i += 1) {
+  list.push(i);
+}
+console.log(binarySearch(list, 11));
