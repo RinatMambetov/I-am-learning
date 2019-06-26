@@ -77,7 +77,7 @@ const { two: newTwo } = myNewObject;
 // 10. Быстрое создание числовых массивов
 //     const numArray = Array.from(new Array(52, (x, i) => i));
 
-const numArray = Array.from(new Array(20), (x, i) => i);
+const numArray = Array.from(new Array(24), (x, i) => i);
 // console.log(numArray);
 
 // 11. Создание кодов для двухфакторной аутентификации
