@@ -17,4 +17,4 @@ const list = [];
 for (let i = 1; i <= 10; i += 1) {
   list.push(i);
 }
-console.log(binarySearch(list, 11));
+console.log(binarySearch(list, 9));

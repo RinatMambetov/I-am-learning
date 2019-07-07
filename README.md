@@ -34,3 +34,4 @@
 | 16.06.19 | Course  | [CSS Grid Wes Bos](https://cssgrid.io)                                                                                                                                     |
 | 16.06.19 | Game    | [CSS Grid Garden](https://cssgridgarden.com)                                                                                                                               |
 | 22.06.19 | Project | [Huddle landing page with alternating feature blocks](https://astrakhanrinat.github.io/frontend-mentor/huddle-landing-page-with-alternating-feature-blocks/app/index.html) |
+| 07.07.19 | Book    | [Grokking Algorithms by Aditya Bhargava](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230)                                         |
