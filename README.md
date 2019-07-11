@@ -1,4 +1,5 @@
 ### My progress 😏
+
 | Date     | Type    | Link                                                                                                                                                                       |
 | -------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 07.01.19 | Course  | [Khan Academy Algebra foundations](https://www.khanacademy.org/math/algebra/introduction-to-algebra)                                                                       |
@@ -35,3 +36,5 @@
 | 16.06.19 | Game    | [CSS Grid Garden](https://cssgridgarden.com)                                                                                                                               |
 | 22.06.19 | Project | [Huddle landing page with alternating feature blocks](https://astrakhanrinat.github.io/frontend-mentor/huddle-landing-page-with-alternating-feature-blocks/app/index.html) |
 | 07.07.19 | Book    | [Grokking Algorithms by Aditya Bhargava](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230)                                         |
+| 10.07.19 | Course  | [Khan Academy Absolute value & piecewise functions](https://www.khanacademy.org/math/algebra/absolute-value-equations-functions)                                           |
+| 11.07.19 | Course  | [Khan Academy Rational exponents & radicals](https://www.khanacademy.org/math/algebra/rational-exponents-and-radicals)                                                     |
