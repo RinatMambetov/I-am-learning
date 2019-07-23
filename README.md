@@ -38,3 +38,4 @@
 | 07.07.19 | Book    | [Grokking Algorithms by Aditya Bhargava](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230)                                         |
 | 10.07.19 | Course  | [Khan Academy Absolute value & piecewise functions](https://www.khanacademy.org/math/algebra/absolute-value-equations-functions)                                           |
 | 11.07.19 | Course  | [Khan Academy Rational exponents & radicals](https://www.khanacademy.org/math/algebra/rational-exponents-and-radicals)                                                     |
+| 21.07.19 | Book    | [Just for Fun: The Story of an Accidental Revolutionary by Linus Torvalds](https://www.amazon.com/Just-Fun-Story-Accidental-Revolutionary/dp/0066620732)                   |
