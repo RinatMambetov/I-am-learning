@@ -1,21 +1,17 @@
 body {
   font-family: 'Montserrat', sans-serif;
-}
-
-#title {
-  background: #ff4c68;
-  color: whitesmoke;
+  text-align: center;
 }
 
 .container-fluid {
-  padding: 3% 15% 7%;
+  padding: 7% 15%;
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   font-size: 3.5rem;
   line-height: 1.5;
+  text-align: left;
 }
 
 h2 {
@@ -36,7 +32,7 @@ p {
 /* Navigation Bar */
 
 .navbar {
-  padding: 0 0 4.5rem;
+  padding: 0 0 8%;
 }
 
 .navbar-brand {
@@ -46,7 +42,7 @@ p {
 }
 
 .navitem {
-  padding: 0 1rem;
+  padding: 0 5%;
 }
 
 .nav-link {
@@ -54,13 +50,22 @@ p {
   font-weight: 300;
 }
 
-/* Download Buttons */
+/* Buttons */
 
 .download-button {
-  margin: 5% 3% 5% 0;
+  margin: 5% 3% 0 0;
 }
 
-/* Title Image */
+/* Title Section */
+
+#title {
+  background: #ff4c68;
+  color: whitesmoke;
+}
+
+.title-text {
+  text-align: left;
+}
 
 .title-image {
   width: 60%;
@@ -69,22 +74,32 @@ p {
   right: 28%;
 }
 
+@media (max-width: 1200px) {
+  .title-image {
+    transform: rotate(0);
+    position: static;
+    margin-top: 10%;
+  }
+
+  .title-text {
+    text-align: center;
+  }
+}
+
 /* Features Section */
 
 #features {
-  padding: 7% 15%;
-  background: white;
+  background: whitesmoke;
   position: relative;
 }
 
 .feature-box {
-  text-align: center;
   padding: 5%;
 }
 
 .icon {
   color: #ef8172;
-  margin-bottom: 1rem;
+  margin-bottom: 7%;
 }
 
 .icon:hover {
@@ -94,32 +109,26 @@ p {
 /* Testimonials section */
 
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
   color: whitesmoke;
-}
-
-.carousel-item {
-  padding: 7% 15%;
 }
 
 .testimonial-image {
   width: 10%;
   border-radius: 50%;
-  margin: 1rem;
+  margin: 3%;
 }
 
 /* Press section */
 
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
 .press-logo {
   width: 15%;
-  margin: 1rem 1rem 2rem;
+  margin: 0 1% 2%;
 }
 
 /* Pricing Section */
@@ -132,13 +141,21 @@ p {
   padding: 3% 2%;
 }
 
-@media screen and (max-width: 1200px) {
-  .title-image {
-    transform: rotate(0);
-    position: static;
-  }
+/* Call to action Section */
 
-  #title {
-    text-align: center;
-  }
+#cta {
+  background: #ff4c68;
+}
+
+.cta-header {
+  font-weight: 900;
+  color: whitesmoke;
+  font-size: 3rem;
+  margin-bottom: 3%;
+}
+
+/* Footer Section */
+
+#footer i {
+  margin: 0 1% 3% 1%;
 }
