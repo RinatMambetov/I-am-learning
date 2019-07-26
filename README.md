@@ -39,3 +39,4 @@
 | 10.07.19 | Course  | [Khan Academy Absolute value & piecewise functions](https://www.khanacademy.org/math/algebra/absolute-value-equations-functions)                                           |
 | 11.07.19 | Course  | [Khan Academy Rational exponents & radicals](https://www.khanacademy.org/math/algebra/rational-exponents-and-radicals)                                                     |
 | 21.07.19 | Book    | [Just for Fun: The Story of an Accidental Revolutionary by Linus Torvalds](https://www.amazon.com/Just-Fun-Story-Accidental-Revolutionary/dp/0066620732)                   |
+| 26.07.19 | Book    | [The clean coder: A Code of Conduct for Professional Programmers by Robert С. Martin](https://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/0137081073)   |
