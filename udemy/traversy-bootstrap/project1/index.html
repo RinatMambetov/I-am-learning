@@ -20,11 +20,14 @@
     <title>LoopLAB</title>
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#main-nav">
     <!-- START HERE -->
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <nav
+      class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"
+      id="main-nav"
+    >
       <div class="container">
         <a href="index.html" class="navbar-brand">LoopLAB</a>
         <button
@@ -314,6 +317,62 @@
       </div>
     </section>
 
+    <!-- FOOTER -->
+    <footer id="main-footer" class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-4">
+            <h3>LoopLAB</h3>
+            <p>Copyright &copy; 2018 - <span id="year"></span></p>
+            <button
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#contactModal"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- CONTACT MODAL -->
+    <div class="modal fade text-dark" id="contactModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Contact Us</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" type="text" class="form-control" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" class="form-control" />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" class="form-control"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary btn-block">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script
       src="http://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -333,6 +392,30 @@
     <script>
       // Get the current year for the copyright
       $('#year').text(new Date().getFullYear());
+
+      // Init Scrollspy
+      $('body').scrollspy({ target: '#main-nav' });
+
+      // Add smooth scrolling
+      $('#main-nav a').on('click', function(e) {
+        // Prevent default behavior
+        e.preventDefault();
+
+        // Store hash
+        const hash = this.hash;
+
+        // Animate smooth scroll
+        $('html, body').animate(
+          {
+            scrollTop: $(hash).offset().top
+          },
+          900,
+          function() {
+            // Add hash to URL after scroll
+            window.location.hash = hash;
+          }
+        );
+      });
     </script>
   </body>
 </html>
