@@ -1,0 +1,27 @@
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.navbar .nav-item.active {
+  border-left: 3px solid #444;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-image-1 {
+  background: url('../img/image1.jpg');
+  background-size: cover;
+}
+
+.carousel-image-2 {
+  background: url('../img/image2.jpg');
+  background-size: cover;
+}
+
+.carousel-image-3 {
+  background: url('../img/image3.jpg');
+  background-size: cover;
+}
