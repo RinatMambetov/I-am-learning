@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .navbar .nav-link {
   font-size: 14px;
   text-transform: uppercase;
@@ -56,11 +60,24 @@
     url('../img/media.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
-  /* background-position: 0 -300px; */
   text-align: center;
   color: whitesmoke;
 }
 
 #video-play a {
   color: whitesmoke;
+}
+
+#page-header {
+  height: 200px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/image1.jpg');
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: whitesmoke;
+  border-bottom: 1px solid #eee;
+}
+
+.about-img {
+  margin-top: -50px;
 }

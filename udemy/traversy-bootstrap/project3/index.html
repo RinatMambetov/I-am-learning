@@ -16,6 +16,12 @@
       integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+      integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Glozzom</title>
   </head>
@@ -201,12 +207,132 @@
             >
               <i class="fas fa-play fa-3x"></i>
             </a>
-            <h1 class="mt-4 mb-0">See What We Do</h1>
+            <h1 class="mt-4 m leadb-0">See What We Do</h1>
           </div>
         </div>
         <!-- </div> -->
       </div>
     </section>
+
+    <!-- PHOTO GALLERY -->
+    <section id="gallery" class="py-5">
+      <div class="container">
+        <h1 class="text-center">Photo Gallery</h1>
+        <p class="text-center lead mb-5">Check out our photos</p>
+
+        <div class="row mb-4">
+          <a
+            href="https://unsplash.it/1200/768.jpg?image=251"
+            data-toggle="lightbox"
+            data-gallery="img-gallery"
+            class="col-md-4 mb-4 mb-md-0"
+          >
+            <img
+              src="https://unsplash.it/600.jpg?image=251"
+              class="img-fluid"
+            />
+          </a>
+          <a
+            href="https://unsplash.it/1200/768.jpg?image=252"
+            data-toggle="lightbox"
+            data-gallery="img-gallery"
+            class="col-md-4 mb-4 mb-md-0"
+          >
+            <img
+              src="https://unsplash.it/600.jpg?image=252"
+              class="img-fluid"
+            />
+          </a>
+          <a
+            href="https://unsplash.it/1200/768.jpg?image=253"
+            data-toggle="lightbox"
+            data-gallery="img-gallery"
+            class="col-md-4"
+          >
+            <img
+              src="https://unsplash.it/600.jpg?image=253"
+              class="img-fluid"
+            />
+          </a>
+        </div>
+
+        <div class="row">
+          <a
+            href="https://unsplash.it/1200/768.jpg?image=254"
+            data-toggle="lightbox"
+            data-gallery="img-gallery"
+            class="col-md-4 mb-4 mb-md-0"
+          >
+            <img
+              src="https://unsplash.it/600.jpg?image=254"
+              class="img-fluid"
+            />
+          </a>
+          <a
+            href="https://unsplash.it/1200/768.jpg?image=255"
+            data-toggle="lightbox"
+            data-gallery="img-gallery"
+            class="col-md-4 mb-4 mb-md-0"
+          >
+            <img
+              src="https://unsplash.it/600.jpg?image=255"
+              class="img-fluid"
+            />
+          </a>
+          <a
+            href="https://unsplash.it/1200/768.jpg?image=256"
+            data-toggle="lightbox"
+            data-gallery="img-gallery"
+            class="col-md-4"
+          >
+            <img
+              src="https://unsplash.it/600.jpg?image=256"
+              class="img-fluid"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section id="newsletter" class="text-center p-5 bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Sign Up For Our Newsletter</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
+              veritatis libero eaque voluptatem, quo ullam iure in animi quas
+              quia.
+            </p>
+            <form class="form-inline justify-content-center">
+              <input
+                type="text"
+                class="form-control mb-2 mr-2"
+                placeholder="Enter Name"
+              />
+              <input
+                type="email"
+                class="form-control mb-2 mr-2"
+                placeholder="Enter Email"
+              />
+              <button type="submit" class="btn btn-primary mb-2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="text-center p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Copyright &copy; <span id="year"></span> Glozzom</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- VIDEO MODAL -->
     <div class="modal fade" id="videoModal">
@@ -243,6 +369,11 @@
       integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+      integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs="
+      crossorigin="anonymous"
+    ></script>
 
     <script>
       // Get the current year for the copyright
@@ -268,6 +399,12 @@
             $(theModal + ' iframe').attr('src', videoSRC);
           });
         });
+      });
+
+      // Lightbox Init
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
       });
     </script>
   </body>
