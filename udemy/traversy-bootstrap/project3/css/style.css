@@ -81,3 +81,17 @@ body {
 .about-img {
   margin-top: -50px;
 }
+
+#services,
+#blog {
+  background: #ddd;
+}
+
+[data-toggle='collapse'] {
+  cursor: pointer;
+}
+
+#main-footer {
+  background: #111;
+  color: whitesmoke;
+}
