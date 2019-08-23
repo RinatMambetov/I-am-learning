@@ -69,7 +69,7 @@ body {
 }
 
 #page-header {
-  height: 200px;
+  min-height: 200px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../img/image1.jpg');
   background-position: 0 -360px;
@@ -83,7 +83,8 @@ body {
 }
 
 #services,
-#blog {
+#blog,
+#contact {
   background: #ddd;
 }
 
@@ -94,4 +95,22 @@ body {
 #main-footer {
   background: #111;
   color: whitesmoke;
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+    column-count: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-columns {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-columns {
+    column-count: 3;
+  }
 }

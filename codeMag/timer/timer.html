@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Timer</title>
+
+    <style>
+      body {
+        text-align: center;
+        margin: 10px;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 16px;
+        background: whitesmoke;
+      }
+
+      .app_form_block input[type='number'] {
+        padding: 4px 4px;
+      }
+
+      .app_main .block_row {
+        padding: 1em 0.5em;
+      }
+
+      .timer_panel_info {
+        font-size: 1.6em;
+        line-height: 1.2em;
+        letter-spacing: 0;
+      }
+
+      .green {
+        color: #1f5f1e;
+      }
+
+      .red {
+        color: #e56655;
+      }
+
+      .timer_panel_nums {
+        font-size: 4.8em;
+        line-height: 1.2em;
+        margin-top: 30px;
+      }
+
+      .app_timer .timer_btn.hide,
+      .app_timer .timer_nums.hide,
+      .app_timer .timer_sep.hide {
+        display: none;
+      }
+
+      .app_timer .timer_btn {
+        border-color: #777;
+        color: #777;
+        font-size: 1.2em;
+        font-weight: 400;
+        line-height: 1.8em;
+        padding: 8px 12px;
+        margin: 0px 2px;
+        min-width: 180px;
+      }
+
+      .app_timer .timer_btn:hover {
+        background-color: #777;
+        color: #fff;
+      }
+
+      .app_timer .timer_btn.run,
+      .app_timer .timer_btn.pause {
+        border-color: #5594e5;
+        color: #5594e5;
+        font-weight: 600;
+      }
+
+      .app_timer .timer_btn.run:hover,
+      .app_timer .timer_btn.pause:hover {
+        background-color: #5594e5;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- https://thecode.media/timer/ -->
+
+    <div class="app_form_block app_main app_timer">
+      <audio id="audio_beep">
+        <source src="./13438.mp3" type="audio/mp3" />
+      </audio>
+
+      <form name="timer_form" id="timer_form">
+        <div class="block_row timer_types">
+          <span class="timer_types_btn active" id="Secret"
+            >Интервальный таймер
+          </span>
+        </div>
+
+        <div class="block_row app_console timer_panel_info">
+          <span class="timer_interval_work">
+            <!-- по умолчанию ставим время одного подхода 00 минут… -->
+            <span
+              class="timer_interval_nums minutes green"
+              contenteditable="true"
+              >00</span
+            >
+            <!-- разделитель — двоеточие -->
+            <span class="timer_sep">:</span>
+            <!-- …и 25 секунд -->
+            <span
+              class="timer_interval_nums seconds green"
+              contenteditable="true"
+              >25</span
+            >
+          </span>
+
+          <!-- блок, который отвечает за количество подходов -->
+          <span class="timer_interval_count">
+            <!-- какой сейчас идёт подход -->
+            <span class="timer_interval_nums times">1</span>
+            <!-- разделитель — косая черта -->
+            <span class="timer_sep">/</span>
+            <!-- и сколько подходов у нас всего -->
+            <span class="timer_interval_nums all_times" contenteditable="true"
+              >10</span
+            >
+          </span>
+
+          <!-- блок, который отвечает за время отдыха -->
+          <span class="timer_interval_rest">
+            <!-- по умолчанию ставим время отдыха 0 минут… -->
+            <span class="timer_interval_nums minutes red" contenteditable="true"
+              >00</span
+            >
+            <span class="timer_sep">:</span>
+            <span class="timer_interval_nums seconds red" contenteditable="true"
+              >5</span
+            >
+          </span>
+        </div>
+
+        <!-- большая цифровая панель -->
+        <div class="timer_panel_nums">
+          <span class="timer_nums minutes">00</span>
+          <span>:</span>
+          <span class="timer_nums seconds">00</span>
+        </div>
+
+        <!-- блок кнопок -->
+        <div class="block_row">
+          <input
+            type="button"
+            value="Reset"
+            name="timer_clear"
+            id="timer_clear"
+            class="timer_btn"
+          />
+
+          <input
+            type="button"
+            value="Start"
+            name="timer_run"
+            id="timer_run"
+            class="timer_btn run"
+          />
+
+          <input
+            type="button"
+            value="Pause"
+            name="timer_pause"
+            id="timer_pause"
+            class="timer_btn pause hide"
+          />
+        </div>
+      </form>
+    </div>
+
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="interval_timer_script.js"
+      defer
+    ></script>
+  </body>
+</html>
