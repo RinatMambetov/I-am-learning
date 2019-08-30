@@ -22,3 +22,15 @@
     padding: 3em !important;
   }
 }
+
+@media (min-width: 576px) {
+  .card-columns {
+    column-count: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-columns {
+    column-count: 3;
+  }
+}
