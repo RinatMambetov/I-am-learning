@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Timer</title>
+    <style>
+      body {
+        background-color: tomato;
+        font-family: Helvetica, sans-serif;
+        font-size: 2rem;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        height: 95vh;
+      }
+    </style>
+  </head>
+  <body onload="timer()">
+    <h1>
+      Привет! Я — ваш таймер, который может вам напомнить о чём-то. Я буду
+      работать до тех пор, пока вы не закроете эту страницу.
+    </h1>
+
+    <script>
+      function timer() {
+        const text = prompt('О чём вам напомнить?');
+        let time = prompt('Через сколько минут?');
+        const repeat = prompt('Сколько раз повторить?');
+        time = time * 60 * 1000;
+        let current = 1;
+
+        setTimeout(function go() {
+          alert(text);
+          if (current < repeat) {
+            setTimeout(go, time);
+          }
+          current += 1;
+        }, time);
+      }
+    </script>
+  </body>
+</html>
