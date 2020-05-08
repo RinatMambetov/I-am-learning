@@ -1,6 +1,6 @@
-let colorRange = ['red', 'green', 'blue', 'yellow'];
-let gamePattern = [];
-let userPattern = [];
+const colorRange = ['green', 'red', 'yellow', 'blue'];
+let gameSequence = [];
+let userSequence = [];
 let level = 0;
 let started = false;
 
@@ -11,58 +11,51 @@ $(document).keypress(function () {
   }
 });
 
-function checkAnswer() {
-  if (
-    userPattern[userPattern.length - 1] === gamePattern[userPattern.length - 1]
-  ) {
-    console.log('success');
-    if (userPattern.length === gamePattern.length) {
-      userPattern = [];
+function checkColor(currentStep) {
+  if (gameSequence[currentStep] === userSequence[currentStep]) {
+    if (gameSequence.length === userSequence.length) {
       setTimeout(function () {
         nextSequence();
-      }, 1000);
+      }, 500);
     }
   } else {
-    console.log('wrong');
+    let wrongAudio = new Audio('sounds/wrong.mp3');
+    wrongAudio.play();
     $('body').addClass('game-over');
     setTimeout(function () {
       $('body').removeClass('game-over');
-    }, 200);
-    $('#level-title').text('Press Any Key to Restart');
+    }, 100);
+    $('#level-title').text('Game Over Press Any Key');
     restartGame();
   }
 }
 
 $('.btn').click(function () {
   let userColor = $(this).attr('id');
-  userPattern.push(userColor);
+  userSequence.push(userColor);
   makeSound(userColor);
   blinkButton(userColor);
-  checkAnswer();
+  checkColor(userSequence.length - 1);
 });
 
 function nextSequence() {
   level++;
+  userSequence = [];
   $('#level-title').text('LeveL ' + level);
   let randomNumber = Math.floor(Math.random() * 4);
-  let randomColor = colorRange[randomNumber];
-  gamePattern.push(randomColor);
-  makeSound(randomColor);
-  $('.' + randomColor)
+  let nextColor = colorRange[randomNumber];
+  gameSequence.push(nextColor);
+  $('.' + nextColor)
     .fadeOut(100)
     .fadeIn(100);
+  makeSound(nextColor);
 }
 
 function restartGame() {
   level = 0;
-  gamePattern = [];
-  userPattern = [];
+  gameSequence = [];
+  userSequence = [];
   started = false;
-}
-
-function makeSound(color) {
-  let sound = new Audio('sounds/' + color + '.mp3');
-  sound.play();
 }
 
 function blinkButton(color) {
@@ -70,4 +63,9 @@ function blinkButton(color) {
   setTimeout(function () {
     $('.' + color).removeClass('pressed');
   }, 100);
+}
+
+function makeSound(color) {
+  let audio = new Audio('sounds/' + color + '.mp3');
+  audio.play();
 }
