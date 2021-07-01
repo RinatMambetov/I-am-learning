@@ -1,0 +1,19 @@
+diff dir2/a dir1/a
+2,5c2,6
+< 1
+< 1
+< 1
+< 1
+---
+> 2
+> 3
+> 4
+> 5
+> 
+Only in dir1: a~
+Only in dir2: .a.un~
+Only in dir1: b
+Only in dir1: b~
+Only in dir1: contextpatch
+Only in dir1: new
+Only in dir1: patch

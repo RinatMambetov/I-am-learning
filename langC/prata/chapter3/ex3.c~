@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+void main(void)
+{
+	printf("\a\n");
+	printf("scared suddenly sounded sound sally screamed what's this");
+}

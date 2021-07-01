@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">FCC Survey Questionnaire</h1>
+            <p id="description" class="description text-center">
+                Thank you for taking the time to answer these questions. The following questions are about to know how
+                well known and successful is FCC
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                    required />
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+            </div>
+
+            <div class="form-group">
+                <p>Have you ever heard about FCC?</p>
+                <label>
+                    <input name="ever-heard" value="yes" type="radio" class="input-radio" checked />Yes</label>
+                <label>
+                    <input name="ever-heard" value="no" type="radio" class="input-radio" />No</label>
+            </div>
+
+            <div class="form-group">
+                <p>How did you learn about FCC?</p>
+                <select id="dropdown" name="how-learn" class="form-control" required>
+                    <option disabled selected value>Please Select</option>
+                    <option value="friend">Friend or Relative</option>
+                    <option value="web">Web Search Engine</option>
+                    <option value="banner">Banner Ad</option>
+                    <option value="magazine">Magazine</option>
+                    <option value="email">E-mail</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Gender?<span class="clue">(optional)</span></p>
+                <label><input name="gender" value="male" type="checkbox" class="input-checkbox" />Male</label>
+                <label>
+                    <input name="gender" value="female" type="checkbox" class="input-checkbox" />Female</label>
+                <label>
+                    <input name="gender" value="other" type="checkbox" class="input-checkbox" />Other</label>
+            </div>
+
+            <div class="form-group">
+                <p>What particular aspect(s) of our website do you like?</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Enter your aspects here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>

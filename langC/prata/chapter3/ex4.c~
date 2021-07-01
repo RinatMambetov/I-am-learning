@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+void main(void) 
+{
+	double num;
+	scanf("%ld", &num);
+	printf("Entered number is %f or %e\n", num, num);
+}

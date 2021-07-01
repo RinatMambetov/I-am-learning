@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+void main(void)
+{
+  printf("Type int has %u bytes.\n", sizeof(int));
+  printf("Type char has %u bytes.\n", sizeof(char));
+  printf("Type long has %u bytes.\n", sizeof(long));
+  printf("Type double has %u bytes.\n", sizeof(double));
+}

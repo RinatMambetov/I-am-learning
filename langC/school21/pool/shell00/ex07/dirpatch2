@@ -1,0 +1,66 @@
+diff -r -N dir2/a dir1/a
+2,5c2,6
+< 1
+< 1
+< 1
+< 1
+---
+> 22
+> 3
+> 44
+> 5
+> 
+diff -r -N dir2/a.orig dir1/a.orig
+0a1,6
+> 1
+> 2
+> 3
+> 4
+> 5
+> 
+Binary files dir2/.a.un~ and dir1/.a.un~ differ
+diff -r -N dir2/b dir1/b
+0a1,6
+> 1
+> 22
+> 3
+> 44
+> 5
+> 
+diff -r -N dir2/contextpatch dir1/contextpatch
+0a1,17
+> *** a	2021-06-14 18:22:49.816757452 +0300
+> --- b	2021-06-14 10:52:22.547290430 +0300
+> ***************
+> *** 1,6 ****
+>   1
+> ! 2
+>   3
+> ! 4
+>   5
+>   
+> --- 1,6 ----
+>   1
+> ! 22
+>   3
+> ! 44
+>   5
+>   
+diff -r -N dir2/new dir1/new
+0a1,6
+> 1
+> 22
+> 3
+> 44
+> 5
+> 
+diff -r -N dir2/patch dir1/patch
+0a1,8
+> 2c2
+> < 2
+> ---
+> > 22
+> 4c4
+> < 4
+> ---
+> > 44

@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+double cube(float);
+
+void main(void)
+{
+	float num;
+	printf("enter int num: ");
+	scanf("%f", &num);
+	while (num > 0) {
+		cube(num);
+		printf("more? (<=0 for exit) \n");
+		scanf("%f", &num);
+	}
+	printf("the end\n");
+}
+
+double cube(float num) {
+	double cube = num * num * num;
+	printf("cube of %.2f is: %.2lf\n", num, cube);
+}
