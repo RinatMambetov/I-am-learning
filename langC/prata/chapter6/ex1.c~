@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+void main(void)
+{
+	char arr[26];
+	//int ch = 97;
+	int count = 0;
+	while (count < 26) {
+		arr[count] = count++ + 97;
+		printf("%c ", arr[count]);
+	//	count++;
+	}
+}
+

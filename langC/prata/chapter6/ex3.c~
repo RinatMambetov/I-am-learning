@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+void main(void)
+{
+	const int rows = 6;
+	int i, j;
+	const char ch = 'F';
+
+	for(i = 0; i < rows; i++) {
+		for(j = 0; j <= i; j++) {
+			printf("%c", ch - j);
+		}
+		printf("\n");
+	}
+}

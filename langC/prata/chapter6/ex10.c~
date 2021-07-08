@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+void main(void)
+{
+	int arr[8];
+	int i;
+
+	printf("enter 8 int nums: ");
+	scanf("%d %d %d %d %d %d %d %d", 
+		&arr[0], &arr[1], &arr[2], &arr[3], &arr[4], &arr[5], &arr[6], &arr[7]);
+
+	for(i = 7; i >= 0; i--) {
+		printf("%d ", arr[i]);
+	}
+}
