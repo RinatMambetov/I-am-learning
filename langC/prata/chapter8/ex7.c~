@@ -1,0 +1,77 @@
+#include <stdio.h>
+#define HOURS_FEE_1 40
+#define FEE_2_HOURS_RATIO 1.5
+#define TAX_RATE_1 0.15
+#define TAX_RATE_2 0.20
+#define TAX_RATE_3 0.05
+#define SALARY_TAX_RATE_1 300
+#define SALARY_TAX_RATE_2 450
+
+void	main(void)
+{
+	int		hours;
+	char 	fee;
+	float	fee_1_hours;
+	float	salary_with_tax;
+	float	salary_without_tax;
+	float	tax;
+
+	printf("***************************************************************\n");
+	printf(	"enter your fee per hour:\n"
+			"a) $8.75/hour                                  b) $9.33/hour\n"
+			"c) $10.00/hour                                 d) $11.20/hour\n"
+			"e) exit\n");
+	printf("***************************************************************\n");
+	step1: scanf("%d", &fee);
+	switch (fee)
+	{
+		case 97:
+			fee_1_hours = 8.75;
+			break;
+		case 98:
+			fee_1_hours = 9.33;
+			break;
+		case 99:
+			fee_1_hours = 10.0;
+			break;
+		case 100:
+			fee_1_hours = 11.20;
+			break;
+		case 101:
+			return ;
+		default:
+			printf("enter 1-5\n");
+	//		scanf("%d", &fee);
+			goto step1;
+	}
+	const int SALARY_FEE_1 = HOURS_FEE_1 * fee_1_hours;
+	const float SALARY_1 = SALARY_TAX_RATE_1 - (SALARY_TAX_RATE_1 * TAX_RATE_1);
+	const float SALARY_2 = (SALARY_TAX_RATE_2 - SALARY_TAX_RATE_1) -
+						(SALARY_TAX_RATE_2 - SALARY_TAX_RATE_1) * TAX_RATE_2;
+	if (fee < 5)
+	{
+		printf("enter amount of hours worked during the week:\n");
+		scanf("%d", &hours);
+	}
+	if (hours > HOURS_FEE_1)
+		salary_with_tax = 	SALARY_FEE_1 + (hours - HOURS_FEE_1) *
+							fee_1_hours * FEE_2_HOURS_RATIO;
+	else
+		salary_with_tax = hours * fee_1_hours;
+	if (salary_with_tax <= SALARY_TAX_RATE_1)
+		salary_without_tax = salary_with_tax - (salary_with_tax * TAX_RATE_1);
+	else if (salary_with_tax <= SALARY_TAX_RATE_2)
+		salary_without_tax = 	SALARY_1 +
+								(salary_with_tax - SALARY_TAX_RATE_1) -
+								(salary_with_tax - SALARY_TAX_RATE_1) *
+								TAX_RATE_2;
+	else
+		salary_without_tax = 	SALARY_1 + SALARY_2 +
+								(salary_with_tax - SALARY_TAX_RATE_2) -
+								(salary_with_tax - SALARY_TAX_RATE_2) *
+								TAX_RATE_3;
+	tax = salary_with_tax - salary_without_tax;
+	printf("salary with tax: $%.2f\n", salary_with_tax);
+	printf("tax: $%.2f\n", tax);
+	printf("salary without tax: $%.2f\n", salary_without_tax);
+}

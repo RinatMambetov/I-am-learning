@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+
+char	get_first(void);
+
+int		main(void)
+{
+//	char str_test[20];
+
+//	strcpy(str_test, " 	hello");
+//	printf(get_first(str_test));
+
+	int ch;
+
+	ch = get_first();
+	printf("%c\n", ch);
+	return (0);
+}
+
+char	get_first(void)
+{
+	int ch;
+
+	//ch = getchar();
+	while (isblank(ch = getchar()))
+		continue;
+	return (ch);
+}
