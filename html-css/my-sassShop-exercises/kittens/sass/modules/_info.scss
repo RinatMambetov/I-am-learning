@@ -1,0 +1,49 @@
+.news,
+.events,
+.location {
+	float: left;
+	padding-right: 4em;
+	width: $baseWidthPercent * 4%;
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	li {
+		border-bottom: 1px dotted $lightGray;
+		margin-bottom: 1em;
+		padding-bottom: 1em;
+		padding-right: 1em;
+
+		a {
+			font-size: 1.25em;
+			text-decoration: none;
+		}
+	}
+
+	.btn {
+		color: $lightPurple;
+		font-size: 1em;
+		font-weight: bold;
+		text-decoration: none;
+
+		&hover {
+			color: $lightBlue;
+		}
+	}
+}
+
+.location {
+	padding-right: 0;
+	width: $baseWidthPercent * 2%;
+
+	dt {
+		color: $lightBlue;
+		font-weight: bold;
+	}
+
+	dd {
+		margin: 0;
+	}
+}

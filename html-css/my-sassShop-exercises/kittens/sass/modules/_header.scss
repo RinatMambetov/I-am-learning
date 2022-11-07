@@ -1,0 +1,35 @@
+.header {
+	background: $lightPurple;
+	border-bottom: $borderWidth solid $white;
+	padding: 1em;
+
+	&:hover {
+		background: $darkenLightPurple;
+	}
+
+	nav {
+		@extend %navlist;
+		float: right;
+
+		a {
+			background: $lightBlue;
+			border-radius: $borderRadius;
+			color: $lightGray;
+			margin-right: 1em;
+			padding: .5em 1em;
+			text-decoration: none;
+
+			&:hover {
+				@include transform-scale;
+			}
+		}
+	}
+
+	h1 {
+		color: $lightBlue;
+		font-family: $fontRibeye;
+		font-size: 3em;
+		margin: .25em 0;
+		text-shadow: 1px 1px 0px $lightYellow;
+	}
+}

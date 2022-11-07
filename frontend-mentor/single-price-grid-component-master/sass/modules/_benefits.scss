@@ -1,0 +1,15 @@
+.promo-section-benefits {
+	background: $cyan-blue;
+	color: $ivory;
+	padding: 1.5rem 3rem 3rem;
+	flex: 1 1 100%;
+
+	&__list {
+		list-style: none;
+		padding-left: 0;
+
+		li {
+			line-height: 1.5;
+		}
+	}
+}

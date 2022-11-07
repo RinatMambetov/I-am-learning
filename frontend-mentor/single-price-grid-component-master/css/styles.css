@@ -1,0 +1,146 @@
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  background: #e5eff5;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto;
+}
+
+.promo-section {
+  border-radius: 0.4rem;
+  width: 90%;
+  background: ivory;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-section-header {
+  padding: 1rem 3rem 1.5rem;
+  flex: 1 1 100%;
+}
+.promo-section-header__title {
+  color: #2ab2af;
+  font-size: 2rem;
+}
+.promo-section-header__subtitle {
+  color: #c0df34;
+  font-size: 1.5rem;
+}
+.promo-section-header__text {
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.promo-section-price {
+  background: #2ab2af;
+  color: ivory;
+  padding: 1.5rem 3rem 3rem;
+  flex: 1 1 100%;
+}
+.promo-section-price__condition {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+.promo-section-price__amount {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.promo-section-price__period {
+  margin-left: 1rem;
+  color: rgba(255, 255, 239, 0.5);
+}
+.promo-section-price__text {
+  margin-top: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+.promo-section-price__button {
+  width: 100%;
+  height: 3.5rem;
+  font-family: "Karla", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: ivory;
+  background: #c0df34;
+  border-style: none;
+  border-radius: 0.4rem;
+  box-shadow: 2px 5px 15px -5px rgba(0, 0, 0, 0.75);
+}
+.promo-section-price__button:hover {
+  background: #a4c21e;
+}
+.promo-section-price__button:active {
+  position: relative;
+  top: 0.2rem;
+  box-shadow: none;
+}
+.promo-section-price__button:focus {
+  outline: none;
+}
+
+.promo-section-benefits {
+  background: #50bebc;
+  color: ivory;
+  padding: 1.5rem 3rem 3rem;
+  flex: 1 1 100%;
+}
+.promo-section-benefits__list {
+  list-style: none;
+  padding-left: 0;
+}
+.promo-section-benefits__list li {
+  line-height: 1.5;
+}
+
+footer {
+  flex: 1 1 100%;
+}
+footer .attribution {
+  font-size: 0.7rem;
+  text-align: center;
+}
+footer .attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (min-width: 1100px) {
+  .wrapper {
+    height: 100vh;
+    margin: 0;
+  }
+
+  .promo-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+  }
+  .promo-section-header {
+    flex-basis: 100%;
+  }
+  .promo-section-price, .promo-section-benefits {
+    flex-basis: 50%;
+  }
+
+  footer {
+    flex-basis: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

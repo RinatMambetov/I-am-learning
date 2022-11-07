@@ -1,0 +1,22 @@
+.more {
+  box-shadow: 0 0 10px var(--light-grey);
+  width: 90%;
+  text-align: center;
+  border-radius: 20px;
+  padding: 60px 30px;
+  background: var(--white);
+  margin: 50px auto;
+
+  position: relative;
+  transform: translateY(70%);
+
+  &__title {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  &__button {
+    @extend %button_large;
+  }
+}

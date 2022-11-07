@@ -1,0 +1,32 @@
+{
+	"name": "sandbox",
+	"version": "1.0.0",
+	"description": "my sandbox",
+	"main": "gulpfile.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/astrakhanRinat/sandbox.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/astrakhanRinat/sandbox/issues"
+	},
+	"homepage": "https://github.com/astrakhanRinat/sandbox#readme",
+	"devDependencies": {
+		"browser-sync": "^2.26.5",
+		"browserslist": "^4.6.1",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^6.1.0",
+		"gulp-sass": "^4.0.2"
+	},
+	"browserslist": [
+		"last 1 version",
+		"> 0.2%",
+		"not dead"
+	]
+}

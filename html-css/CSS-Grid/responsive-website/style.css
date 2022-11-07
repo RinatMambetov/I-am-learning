@@ -1,0 +1,238 @@
+:root {
+  --shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  --white: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  font-size: 15px;
+}
+
+button {
+  background: var(--yellow);
+  border: 0;
+  padding: 10px 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.top {
+  display: grid;
+  grid-template-areas:
+    "hero hero"
+    "cta1 cta2";
+  grid-gap: 20px;
+}
+
+.hero {
+  grid-area: hero;
+  min-height: 400px;
+  background: white url(./images/taco.jpg);
+  background-size: cover;
+  background-position: bottom right;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-shadow: var(--shadow);
+}
+
+.hero > * {
+  background: var(--yellow);
+  padding: 5px;
+}
+
+.cta {
+  background: var(--yellow);
+  display: grid;
+  justify-items: center;
+  min-height: 190px;
+  align-content: center;
+  box-shadow: var(--shadow);
+}
+
+.cta p {
+  margin: 0;
+}
+
+.cta .price {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.cta1 {
+  grid-area: cta1;
+}
+
+.cta2 {
+  grid-area: cta2;
+}
+
+/* Navigation */
+
+.menu {
+  order: -1;
+  perspective: 1000px;
+}
+
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  grid-gap: 10px;
+  justify-content: center;
+
+  max-height: 0;
+  overflow: hidden;
+  transform: rotateX(90deg);
+  transition: all 0.5s;
+}
+
+.menu a {
+  text-transform: uppercase;
+  background: var(--yellow);
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  color: var(--black);
+}
+
+[aria-controls="menu-list"] {
+  display: block;
+  min-width: 100px;
+}
+
+[aria-expanded="true"] ~ ul {
+  display: grid;
+  max-height: 500px;
+  transform: rotateX(0);
+}
+
+[aria-expanded="true"] {
+  margin-bottom: 10px;
+}
+
+[aria-expanded="true"] .close {
+  display: inline-block;
+}
+
+[aria-expanded="true"] .open {
+  display: none;
+}
+
+[aria-expanded="false"] .close {
+  display: none;
+}
+
+/* Features */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.feature {
+  background: var(--white);
+  padding: 10px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.feature .icon {
+  font-size: 50px;
+}
+
+.feature h3 {
+  margin-top: 10px;
+}
+
+.feature p {
+  margin: 10px 0 0 0;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* About section */
+
+.about {
+  background: var(--white);
+  padding: 50px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-rows: 300px auto;
+  justify-items: center;
+  box-shadow: var(--shadow);
+}
+
+/* Gallery */
+
+.gallery {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.gallery img {
+  width: 100%;
+  box-shadow: var(--shadow);
+}
+
+.gallery h2 {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.gallery h2::before,
+.gallery h2::after {
+  display: block;
+  content: "";
+  height: 10px;
+  background: linear-gradient(
+    to var(--direction, left),
+    var(--yellow),
+    transparent
+  );
+}
+
+.gallery h2::after {
+  --direction: right;
+}
+
+/* Media */
+
+@media (min-width: 800px) {
+  .top {
+    grid-template-areas:
+      "hero cta1"
+      "hero cta2";
+  }
+
+  .menu {
+    order: 0;
+  }
+
+  .about {
+    grid-template-columns: 400px auto;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-gap: 0;
+  }
+
+  [aria-controls="menu-list"] {
+    display: none;
+  }
+}

@@ -1,0 +1,33 @@
+.features {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, auto);
+  grid-gap: 20px;
+  padding: 60px 30px 0px;
+
+  &__feature {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--light-grey);
+  }
+
+  &__image,
+  &__image_right {
+    width: 100%;
+  }
+
+  &__content,
+  &__content_left {
+    text-align: center;
+  }
+
+  &__title {
+    margin-top: 60px;
+    font-size: 1.7rem;
+  }
+
+  &__desc {
+    margin-bottom: 0;
+  }
+}

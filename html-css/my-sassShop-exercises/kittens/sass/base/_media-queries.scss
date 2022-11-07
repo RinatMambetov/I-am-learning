@@ -1,0 +1,29 @@
+@media screen and (max-width: $mobile-large) {
+	body {
+		text-align: center;
+	}
+
+	.wrapper {
+		width: 100%;
+	}
+
+	.search {
+		margin-top: 1em;
+	}
+
+	.header nav,
+	.footer nav,
+	.footer .copy,
+	.search {
+		float: none;
+	}
+
+	.kittens li,
+	.news,
+	.events,
+	.location {
+		float: none;
+		padding: 1em 0;
+		width: 100%;
+	}
+}

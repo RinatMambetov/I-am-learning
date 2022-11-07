@@ -1,0 +1,19 @@
+.promo-section-header {
+	padding: 1rem 3rem 1.5rem;
+	flex: 1 1 100%;
+
+	&__title {
+		color: $cyan;
+		font-size: 2rem;
+	}
+
+	&__subtitle {
+		color: $bright-yellow;
+		font-size: 1.5rem;
+	}
+
+	&__text {
+		line-height: 2;
+		color: $gray;
+	}
+}
