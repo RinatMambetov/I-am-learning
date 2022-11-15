@@ -112,7 +112,7 @@ int *m_array = new int[size];
 
 //************* конструктор присваивания с глубоким копированием ***************//
 
-IntArray(const IntArray &old)
+IntArray(IntArray const &old)
 {
 	m_size = old.m_size;
 	if (old.m_array)
